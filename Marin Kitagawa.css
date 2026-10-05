@@ -1,0 +1,230 @@
+/**
+ * @name Marin Kitagawa Theme
+ * @author Orifleqm
+ */
+
+@import url("https://clearvision.github.io/ClearVision-v7/main.css");
+
+:root {
+
+  /* ===== BACKGROUND ===== */
+
+  --background-image: url("https://github.com/notleqm/images-for-css/blob/main/marin%20v5.png?raw=true");
+
+  --background-position: center;
+  --background-size: cover;
+  --background-repeat: no-repeat;
+
+  --background-shading: 55% !important;
+  --background-overlay: rgba(220, 225, 235, 0.28) !important;
+
+  /* ===== MAIN COLORS ===== */
+
+  --main-color: #ffffff;
+  --hover-color: #dfe8ff;
+  --success-color: #cfd8ff;
+  --danger-color: #bcc8e6;
+
+  /* ===== TEXT ===== */
+
+  --text-normal: #f4f7ff;
+  --text-muted: #cdd6ea;
+  --channels-default: #e3ebff;
+
+  /* ===== STATUS COLORS ===== */
+
+  --online-color: #d8e6ff;
+  --idle-color: #bfcfff;
+  --dnd-color: #9aa7c7;
+  --streaming-color: #cfd9ff;
+}
+
+/* =========================
+   🌌 MAIN BACKGROUND
+========================= */
+
+#app-mount,
+.app-3xd6d0,
+.bg-1QIAus {
+  background: transparent !important;
+}
+
+/* =========================
+   ✨ GLOBAL TEXT
+========================= */
+
+span,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+textarea,
+input,
+button,
+a {
+  color: var(--text-normal) !important;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.65) !important;
+}
+
+/* =========================
+   ❄ SIDEBAR + CHANNELS
+========================= */
+
+.containerDefault-YUSmu3:hover,
+.modeSelected-3DmyhH,
+.interactive-1vLZ_I:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-radius: 12px;
+  transition: 0.25s ease;
+  box-shadow: 0 0 10px rgba(220, 230, 255, 0.18);
+}
+
+/* =========================
+   💬 CHAT HOVER
+========================= */
+
+.message-2CShn3:hover {
+  background: rgba(255, 255, 255, 0.05) !important;
+  transition: 0.2s ease;
+}
+
+/* =========================
+   ✨ BUTTONS
+========================= */
+
+button {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(220, 230, 255, 0.2) !important;
+  border-radius: 12px !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.16) !important;
+}
+
+/* =========================
+   🌙 USER PANEL
+========================= */
+
+.panels-3wFtMD {
+  background: rgba(180, 190, 210, 0.18) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* =========================
+   ❄ TRANSPARENCY
+========================= */
+
+.sidebar-1tnWFu,
+.chat-2ZfjoI,
+.container-1NXEtd,
+.members-3WRCEx,
+.content-1SgpWY {
+  background: rgba(255, 255, 255, 0.04) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* =========================
+   ✨ SCROLLBAR
+========================= */
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.22) !important;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* =========================
+   🌟 GLOW EFFECTS
+========================= */
+
+.selected-1-Z6gm,
+.wrapper-NhbLHG:hover,
+.link-39sEB3:hover {
+  box-shadow: 0 0 14px rgba(235, 240, 255, 0.25);
+}
+
+/* =========================
+   ✨ FROSTED GLASS
+========================= */
+
+.visual-refresh .theme-dark,
+.theme-dark .container-2cd8Mz,
+.theme-dark .chatContent-3KubbW {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* =========================
+   🩶 INPUT FIELDS
+========================= */
+
+.input-2g-os5,
+.scrollableContainer-15eg7h {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px !important;
+}
+
+/* =========================
+   ✨ FRIEND LIST HOVER
+========================= */
+
+.peopleListItem-u6dGxF:hover {
+  background: rgba(255,255,255,0.06) !important;
+  border-radius: 14px;
+}
+
+/* =========================================================
+   🚫 NO BLUR — PROFILE / POPOUT / MODAL
+   ========================================================= */
+
+/* Disable backdrop blur globally so opening a profile does not
+   blur the Discord interface/background. */
+*,
+*::before,
+*::after {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Discord profile popout / profile modal */
+.userPopoutOuter,
+.userPopoutInner,
+.userProfileModalOuter,
+.userProfileModalInner,
+.userProfileModalOverlayBackground,
+.userProfileModalOverlay,
+.profilePanel-,
+[class*="userPopout"],
+[class*="userProfileModal"],
+[class*="profileModal"] {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  filter: none !important;
+}
+
+/* Prevent the opened-profile overlay from blurring the page behind it. */
+[class*="backdrop"],
+[class*="overlay"] {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Keep profile cards solid instead of frosted/glass-like. */
+.userPopoutOuter,
+.userProfileModalOuter {
+  background-image: none;
+}
+
